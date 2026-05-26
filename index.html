@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEKRIS — Daşınmaz Əmlak Kadastr və Reyestr İnformasiya Sistemi</title>
+
+  <!-- Primary SEO -->
+  <meta name="description"
+    content="DEKRIS — Azərbaycan Respublikasının daşınmaz əmlak üzrə vahid elektron kadastr və reyestr informasiya sistemi. Sənəd dövriyyəsi, hüquq qeydiyyatı, kadastr uçotu və daha çox.">
+  <meta name="keywords" content="DEKRIS, daşınmaz əmlak, kadastr, reyestr, elektron sənəd, Azərbaycan">
+  <meta name="author" content="Azərbaycan Respublikası — DEKRIS">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dekris.gov.az/">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dekris.gov.az/">
+  <meta property="og:title" content="DEKRIS — Daşınmaz Əmlak Kadastr və Reyestr İnformasiya Sistemi">
+  <meta property="og:description"
+    content="Azərbaycan Respublikasının daşınmaz əmlak üzrə vahid elektron kadastr və reyestr informasiya sistemi. 8 ixtisaslaşmış altsistem, e-imza dəstəyi, tam rəqəmsal xidmət.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DEKRIS — Elektron Kadastr və Reyestr Sistemi">
+  <meta property="og:locale" content="az_AZ">
+  <meta property="og:site_name" content="DEKRIS">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://dekris.gov.az/">
+  <meta name="twitter:title" content="DEKRIS — Daşınmaz Əmlak Kadastr və Reyestr İnformasiya Sistemi">
+  <meta name="twitter:description"
+    content="Azərbaycan Respublikasının daşınmaz əmlak üzrə vahid elektron kadastr və reyestr informasiya sistemi. 8 altsistem, e-imza, tam rəqəmsal xidmət.">
+  <meta name="twitter:image:alt" content="DEKRIS Portal">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230b1f3a'/><text x='50%25' y='54%25' font-size='18' font-family='serif' font-weight='900' fill='%23c9a84c' text-anchor='middle' dominant-baseline='middle'>D</text></svg>">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="#">DEKRIS<span> — Rəsmi Portal</span></a>
+
+    <div class="header-right">
+      <nav>
+        <a href="#altsistemlər">Altsistemlər</a>
+        <a href="#necedir">Necə İşləyir</a>
+        <a href="#elaqe">Əlaqə</a>
+      </nav>
+
+
+
+      <!-- Burger (mobile only) -->
+      <button class="burger" id="burger" aria-label="Menyunu aç/bağla">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#altsistemlər">Altsistemlər</a>
+    <a href="#necedir">Necə İşləyir</a>
+    <a href="#elaqe">Əlaqə</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Azərbaycan Respublikası</span>
+      <h1>Daşınmaz Əmlak<br><em>Elektron Kadastr</em><br>və Reyestr Sistemi</h1>
+      <p>DEKRIS — daşınmaz əmlakın dövlət kadastrı və reyestrinin aparılması, sənəd dövriyyəsinin rəqəmsal idarə
+        olunması üçün vahid elektron platforma.</p>
+      <a class="hero-cta" href="#altsistemlər">
+        Altsistemləri Kəşf Et
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+    <div class="hero-visual">
+      <div class="stat-card">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Əsas Altsistem</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">E-İmza</div>
+        <div class="stat-label">Dəstəklənir</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">360°</div>
+        <div class="stat-label">Rəqəmsal Sənəd Dövriyyəsi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSYSTEMS -->
+  <section id="altsistemlər">
+    <div class="section-label">Struktur</div>
+    <h2 class="section-title">DEKRIS-in Altsistemləri</h2>
+    <p class="section-intro">Sistem 8 ixtisaslaşmış altsistemdan ibarətdir. Hər altsistem müstəqil funksiya daşıyır və
+      vahid platforma çərçivəsində inteqrasiya olunur.</p>
+    <div class="subsystems-grid">
+      <div class="sub-card">
+        <div class="sub-num">01</div>
+        <div class="sub-title">Sənədlərin Elektron Dövriyyəsi</div>
+        <div class="sub-desc">Ərizəçilərin müraciəti, sənədlərin qəbulu, emalı və nəticə barədə elektron bildirişlərin
+          göndərilməsi. Şəxsi kabinetdən e-imza ilə ərizə formalaşdırılır.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">02</div>
+        <div class="sub-title">Hüquqmüəyyənedici və Texniki Sənədlər</div>
+        <div class="sub-desc">Daşınmaz əmlak üzərində hüquqların qeydiyyatı üçün əsas olan sənədlər DEKRIS iştirakçıları
+          tərəfindən daxil edilir və istifadəçilərə açıq olur.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">03</div>
+        <div class="sub-title">Daşınmaz Əmlakın Dövlət Reyestri</div>
+        <div class="sub-desc">Mülkiyyət və digər əşya hüquqlarının əmələ gəlməsi, məhdudlaşdırılması, başqasına keçməsi
+          və xitam verilməsi barədə məlumatların qeydiyyatı.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">04</div>
+        <div class="sub-title">Daşınmaz Əmlakın Dövlət Kadastrı</div>
+        <div class="sub-desc">Kadastr uçotuna alınması üçün daşınmaz əmlaka dair məlumatlar, texniki sənədlər, inzibati
+          ərazilər və xəritələr daxil edilir.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">05</div>
+        <div class="sub-title">Çoxmənzilli Yaşayış Binaları</div>
+        <div class="sub-desc">Tikintiyə icazə alınmış hər bir çoxmənzilli binaya ayrı bölmə. Kooperativ üzvlüyü, pay
+          haqqı, sahə verilməsi məlumatları burada əksini tapır.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">06</div>
+        <div class="sub-title">Sorğu</div>
+        <div class="sub-desc">Qeydiyyat üçün tələb olunan, lakin hüquqmüəyyənedici sənədlər altsisteminə əlavə edilməmiş
+          sənədlərin sistemə daxil edilməsi üçün sorğu göndərilir.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">07</div>
+        <div class="sub-title">Təhlil və Hesabat</div>
+        <div class="sub-desc">Məlumat bazasındakı məlumatlar, dövlət rüsumu və xidmət haqqından daxilolmalar müxtəlif
+          parametrlərə görə hesabatlar şəklində alına bilər.</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-num">08</div>
+        <div class="sub-title">Məlumatların Verilməsi</div>
+        <div class="sub-desc">Dövlət kadastrı və reyestrindən mülkiyyət hüquqları, məhdudiyyətlər, kadastr uçotu
+          məlumatları və sənədlərin verilməsi bu altsistem vasitəsilə həyata keçirilir.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="necedir">
+    <div class="section-label">İş Axını</div>
+    <h2 class="section-title">Necə İstifadə Etmək Olar</h2>
+    <p class="section-intro">DEKRIS-dən istifadə sadə addımlarla həyata keçirilir. Şəxsi kabinet üzərindən bütün
+      xidmətlərə daxil ola bilərsiniz.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Şəxsi Kabinete Daxil Olun</h3>
+        <p>DEKRIS-ə elektron imzanız vasitəsilə şəxsi kabinet üzərindən giriş edin.</p>
+      </div>
+      <div class="step">
+        <h3>Xidməti Seçin</h3>
+        <p>Lazım olan xidməti tapın — kadastr, reyestr, sorğu və ya hesabat xidmətlərindən birini seçin.</p>
+      </div>
+      <div class="step">
+        <h3>Ərizə Formalaşdırın</h3>
+        <p>Tələb olunan sənədləri hazırlayın, elektron imza ilə imzalayın və ərizəyə əlavə edin.</p>
+      </div>
+      <div class="step">
+        <h3>Nəticəni Alın</h3>
+        <p>Müraciətə baxılmasının nəticəsi barədə elektron bildiriş şəxsi kabinetinizə göndəriləcək.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="elaqe">
+    <div class="section-label">Bizimlə Əlaqə</div>
+    <h2 class="section-title">Əlaqə Məlumatları</h2>
+    <p class="section-intro">Suallarınız üçün aşağıdakı kanallar vasitəsilə bizimlə əlaqə saxlaya bilərsiniz.</p>
+
+    <div class="contact-grid">
+
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M2 7l10 7 10-7" />
+          </svg>
+        </div>
+        <div class="contact-label">E-Poçt</div>
+        <a class="contact-value" href="mailto:info@dekris.gov.az">info@dekris.gov.az</a>
+        <a class="contact-value" href="mailto:support@dekris.gov.az">support@dekris.gov.az</a>
+        <div class="contact-sub">İş günləri 09:00 – 18:00</div>
+      </div>
+
+      <!-- Phone -->
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22 16.9v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.8 19.8 0 01.12 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.573 2.81.7A2 2 0 0122 16.9z" />
+          </svg>
+        </div>
+        <div class="contact-label">Telefon</div>
+        <a class="contact-value" href="tel:+994124971234">+994 12 497 12 34</a>
+        <a class="contact-value" href="tel:+994125551234">+994 12 555 12 34</a>
+        <div class="contact-sub">Çağrı Mərkəzi: 1234</div>
+      </div>
+
+      <!-- Social -->
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" />
+          </svg>
+        </div>
+        <div class="contact-label">Sosial Şəbəkələr</div>
+        <div class="contact-value" style="font-size:.85rem; color: var(--text-muted);">Rəsmi səhifələrimizi izləyin
+        </div>
+        <div class="social-row">
+          <a class="social-btn" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+            Facebook
+          </a>
+          <a class="social-btn" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            Instagram
+          </a>
+          <a class="social-btn" href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+            </svg>
+            YouTube
+          </a>
+          <a class="social-btn" href="#" aria-label="Telegram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21.198 2.433a2.242 2.242 0 00-1.022.215l-16.5 6.498c-1.076.424-1.07 1.38-.197 1.64l4.062 1.268 1.564 4.804c.192.601.944.838 1.449.43l2.286-1.876 4.402 3.24c.822.605 1.978.19 2.196-.795L22.96 3.993c.32-1.297-.603-1.814-1.762-1.56zM8.8 13.9l-.36 3.612-1.012-3.114L16.8 7.3z" />
+            </svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="logo" href="#">DEKRIS<span></span></a>
+    <p>© 2024 Azərbaycan Respublikası — Daşınmaz Əmlakın Dövlət Reyestri və Kadastrı</p>
+    <p>Bütün hüquqlar qorunur</p>
+  </footer>
+
+  <!-- GREETING POPUP — floats above BB8 -->
+  <div class="greeting-popup" id="greetingPopup">
+    <div class="greeting-bubble">
+      <button class="greeting-close" id="greetingClose" aria-label="Bağla">×</button>
+      <strong id="greetingTitle">DEKRIS Köməkçisi</strong>
+      <p id="greetingText">Xoş gəlmisiniz! DEKRIS portalına daxil oldunuz. Sizə necə kömək edə bilərəm?</p>
+    </div>
+  </div>
+
+  <!-- BB8 THEME TOGGLE — fixed bottom-right, acts as the robot mascot -->
+  <label class="bb8-toggle" title="Gecə/Gündüz modu">
+    <input class="bb8-toggle__checkbox" type="checkbox" id="themeBtn">
+    <div class="bb8-toggle__container">
+      <div class="bb8-toggle__scenery">
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="bb8-toggle__star"></div>
+        <div class="tatto-1"></div>
+        <div class="tatto-2"></div>
+        <div class="gomrassen"></div>
+        <div class="hermes"></div>
+        <div class="chenini"></div>
+        <div class="bb8-toggle__cloud"></div>
+        <div class="bb8-toggle__cloud"></div>
+        <div class="bb8-toggle__cloud"></div>
+      </div>
+      <div class="bb8">
+        <div class="bb8__head-container">
+          <div class="bb8__antenna"></div>
+          <div class="bb8__antenna"></div>
+          <div class="bb8__head"></div>
+        </div>
+        <div class="bb8__body"></div>
+      </div>
+      <div class="artificial__hidden">
+        <div class="bb8__shadow"></div>
+      </div>
+    </div>
+  </label>
+
+
+</body>
+
+</html>
