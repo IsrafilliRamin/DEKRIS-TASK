@@ -667,6 +667,9 @@
   }
   @media (max-width: 560px) {
     .contact-grid { grid-template-columns: 1fr; }
+     .bb8-toggle{
+      right: 20px;
+    }
   }
 
   /* ── ANIMATIONS ── */
